@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">AppQuiz3bimestre</string>
 
-    <string name="quiz_text_home">Quiz</string>
-    <string name="insertName_home">Nome</string>
+    <string name="tv_quiz_home">Quiz</string>
+    <string name="tv_welcome_home">Bem-Vindo</string>
+    <string name="insertName_home">Digite seu nome</string>
     <string name="typeName_home">Digite seu nome</string>
     <string name="btn_home">Começar</string>
 
