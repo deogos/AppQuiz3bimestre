@@ -63,9 +63,10 @@
 
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nome"
+                    android:hint="@string/hint"
                     android:minHeight="48dp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -76,8 +77,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
-                android:textColor="@color/white"
-                android:text="@string/btn_home">
+                android:text="@string/btn_home"
+                android:textColor="@color/white">
 
             </Button>
 

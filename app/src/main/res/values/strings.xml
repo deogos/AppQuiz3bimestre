@@ -6,5 +6,14 @@
     <string name="insertName_home">Digite seu nome</string>
     <string name="typeName_home">Digite seu nome</string>
     <string name="btn_home">Começar</string>
+    <string name="hint">Nome</string>
+
+    <string name="questao1">Qual o sobrenome do barack?</string>
+    <string name="answer_one_question_one">Barack</string>
+    <string name="answer_two_question_one">Obama</string>
+    <string name="answer__three_question__one">Estados Unidos</string>
+    <string name="answer_four_question_one">Pereira</string>
+    <string name="send_button">Enviar</string>
+    <string name="questao2">Em qual local do mundo você está?</string>
 
 </resources>
