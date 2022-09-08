@@ -36,7 +36,6 @@ public class question5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 answer_two.setBackgroundResource(R.drawable.clicked_border_bg);
-                answer_two.setEnabled(false);
             };
         });
 
@@ -63,7 +62,7 @@ public class question5 extends AppCompatActivity {
 
     }
     private void openActivity_question6() {
-        Intent intentQuestion6 = new Intent(this, question6.class);
+        Intent intentQuestion6 = new Intent(this, result.class);
         startActivity(intentQuestion6);
     }
     }

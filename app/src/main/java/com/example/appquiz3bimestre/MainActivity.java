@@ -1,15 +1,6 @@
 package com.example.appquiz3bimestre;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Geocoder;
-import android.location.Location;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -17,12 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.Locale;
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
     private Button btnhome;
     private EditText editText;
+    String st;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                  }
                  else
                  {
+                     transferUsername();
                     openActivity_question();
                     finish();
                  }
@@ -60,5 +53,10 @@ public class MainActivity extends AppCompatActivity {
     private void openActivity_question() {
         Intent intentQuestion = new Intent(this, question.class);
         startActivity(intentQuestion);
+
+    }
+
+    private void transferUsername(){
+
     }
 }

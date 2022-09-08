@@ -1,6 +1,8 @@
 package com.example.appquiz3bimestre;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
@@ -9,21 +11,31 @@ import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationListener;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.tasks.OnSuccessListener;
+
+import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-public class question2 extends AppCompatActivity {
+public class question2 extends AppCompatActivity  {
 
     private TextView answer_one, answer_two, answer_three, answer_four;
     private Button btn_getLocation, btn_subimit;
 
+    FusedLocationProviderClient fusedLocationProviderClient;
+    LocationCallback locationCallback;
 
-    private final static int REQUEST_CODE = 100;
+
+    int location_request_id = 10;
 
 
     @Override
@@ -53,7 +65,6 @@ public class question2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 answer_two.setBackgroundResource(R.drawable.clicked_border_bg);
-                answer_two.setEnabled(false);
             }
 
             ;
@@ -89,7 +100,7 @@ public class question2 extends AppCompatActivity {
         btn_getLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                getLocation();
             }
         });
 
@@ -99,5 +110,6 @@ public class question2 extends AppCompatActivity {
         Intent intentQuestion3 = new Intent(this, question3.class);
         startActivity(intentQuestion3);
     }
+
 }
 

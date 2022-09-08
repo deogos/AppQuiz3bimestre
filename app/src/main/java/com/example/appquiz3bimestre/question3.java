@@ -35,7 +35,6 @@ public class question3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 answer_two.setBackgroundResource(R.drawable.clicked_border_bg);
-                answer_two.setEnabled(false);
                 ;
             };
         });

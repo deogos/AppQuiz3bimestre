@@ -12,7 +12,6 @@ public class question extends AppCompatActivity {
 
     private Button submit;
     private TextView answer_one, answer_two,answer_three,answer_four;
-    public int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +36,6 @@ public class question extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 answer_two.setBackgroundResource(R.drawable.clicked_border_bg);
-                answer_two.setEnabled(false);
-                i++;
             };
         });
 
