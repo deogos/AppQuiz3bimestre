@@ -8,12 +8,44 @@
     <string name="btn_home">Começar</string>
     <string name="hint">Nome</string>
 
-    <string name="questao1">Qual o sobrenome do barack?</string>
+    <string name="question1">Qual o sobrenome do barack?</string>
     <string name="answer_one_question_one">Barack</string>
     <string name="answer_two_question_one">Obama</string>
     <string name="answer__three_question__one">Estados Unidos</string>
     <string name="answer_four_question_one">Pereira</string>
+
     <string name="send_button">Enviar</string>
-    <string name="questao2">Em qual local do mundo você está?</string>
+
+    <string name="question2">Em qual local do mundo você está?</string>
+    <string name="answer_one_question_two">🤔🤔</string>
+    <string name="answer_two_question_two">Osasco💀💀</string>
+    <string name="answer_three_question_two">Austrália</string>
+    <string name="answer_four_question_two">Marte</string>
+
+    <string name="question3">Essa bandeira percente a qual país?</string>
+    <string name="answer_one_question_three">Haiti</string>
+    <string name="answer_two_question_three">País das Pernas</string>
+    <string name="answer_three_question_three">Uganda</string>
+    <string name="answer_four_question_three">Sicília</string>
+
+    <string name="question4">Qual a data?</string>
+    <string name="answer_one_question_four">31/08</string>
+    <string name="answer_two_question_four">25/12</string>
+    <string name="answer_three_question_four">7/09</string>
+    <string name="answer_four_question_four">12/10</string>
+
+    <string name="question5">Existem mais submarinos no céu ou aviões no mar?</string>
+    <string name="answer_one_question_five">Sim</string>
+    <string name="answer_two_question_five">Não</string>
+    <string name="answer_three_question_five">Submarinos no céu</string>
+    <string name="answer_four_question_five">Aviões no bar</string>
+
+    <string name="question6">Qual é melhor?</string>
+    <string name="answer_one_question_six">Haiti</string>
+    <string name="answer_two_question_six">País das Pernas</string>
+    <string name="answer_three_question_six">Uganda</string>
+    <string name="answer_four_question_six">Sicília</string>
+    <string name="local">Habilitar Local</string>
+
 
 </resources>

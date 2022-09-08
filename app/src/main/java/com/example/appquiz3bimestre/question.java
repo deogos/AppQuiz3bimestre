@@ -68,4 +68,7 @@ public class question extends AppCompatActivity {
         Intent intentQuestion2 = new Intent(this, question2.class);
         startActivity(intentQuestion2);
     }
-}
+
+
+    }
+
