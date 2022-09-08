@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.appquiz3bimestre">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,10 @@
         android:theme="@style/Theme.AppQuiz3bimestre"
         tools:targetApi="31">
         <activity
-            android:name=".activity_question2"
+            android:name=".question3"
+            android:exported="false" />
+        <activity
+            android:name=".question2"
             android:exported="false" />
         <activity
             android:name=".question"
