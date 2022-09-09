@@ -1,6 +1,7 @@
 package com.example.appquiz3bimestre;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -58,5 +59,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void transferUsername(){
 
+    }
+
+    public void OpenGithub(View view) {
+        Intent opengit = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/deogos/AppQuiz3bimestre"));
+        startActivity(opengit);
+    }
+    public void OpenStack(View view) {
+        Intent openstack = new Intent(Intent.ACTION_VIEW, Uri.parse("https://stackoverflow.co"));
+        startActivity(openstack);
+    }
+
+    public void OpenMaps(View view) {
+        Intent openmaps = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com.br/maps"));
+        startActivity(openmaps);
     }
 }

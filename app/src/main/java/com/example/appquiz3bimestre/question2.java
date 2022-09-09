@@ -100,7 +100,6 @@ public class question2 extends AppCompatActivity  {
         btn_getLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getLocation();
             }
         });
 
