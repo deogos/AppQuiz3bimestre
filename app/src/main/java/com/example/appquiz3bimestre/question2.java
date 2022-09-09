@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.io.IOException;
@@ -35,7 +36,7 @@ public class question2 extends AppCompatActivity  {
     LocationCallback locationCallback;
 
 
-    int location_request_id = 10;
+   private final static int REQUEST_CODE = 100;
 
 
     @Override
@@ -50,6 +51,7 @@ public class question2 extends AppCompatActivity  {
         answer_four = findViewById(R.id.answer_four);
 
         btn_subimit = findViewById(R.id.btn_submit);
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
         btn_getLocation = findViewById(R.id.btn_getLocation);
         answer_one.setOnClickListener(new View.OnClickListener() {
@@ -100,8 +102,34 @@ public class question2 extends AppCompatActivity  {
         btn_getLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FindLocation();
             }
         });
+
+    }
+
+    private void FindLocation() {
+        if (ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+                @Override
+                public void onSuccess(Location location) {
+                   if (location !=null){
+                       Geocoder geocoder = new Geocoder(question2.this,Locale.getDefault() );
+                       List<Address> addressList = null;
+                       try {
+                           addressList = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),1);
+                           answer_one.setText(""+addressList.get(0).getAddressLine(0));
+
+                       } catch (IOException e) {
+                           e.printStackTrace();
+                       }
+
+                   }
+                }
+            });
+        }else {
+
+        }
 
     }
 
