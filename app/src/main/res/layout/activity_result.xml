@@ -30,12 +30,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="placeholder"
+                android:text="Parabéns!"
                 android:textColor="#191E29"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/trophy"
                 android:layout_width="303dp"
                 android:layout_height="403dp"
                 android:layout_gravity="center"
@@ -46,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="placeholder"
+                android:text="Jogador"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
